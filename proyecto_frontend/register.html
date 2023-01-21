@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="./logos/favicon_bota_fora.png.svg" type="img">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <title>Login</title>
+    <title>Register</title>
     <style>
         :root {
             --very-light-pink: #C7C7C7;
@@ -41,12 +41,10 @@
             width: 300px;
         }
 
-        .logo {
-            width: 150px;
-            margin-bottom: 48px;
-            justify-self: center;
-            display: none;
-            /* para que no aparesca */
+        .title {
+            font-size: var(--lg);
+            margin-bottom: 40px;
+            text-align: left;
         }
 
         .lable {
@@ -62,7 +60,7 @@
             height: 30px;
             font-size: var(--md);
             padding: 6px;
-            margin-bottom: 12px;
+            margin-bottom: 20px;
         }
 
         .form {
@@ -82,46 +80,14 @@
             height: 50px;
         }
 
-        .second-buttom {
-            background-color: var(--White);
-            border-radius: 8px;
-            border: solid 1px  var(--Hospital-green);
-            color: var(--Hospital-green);
-            width: 100%;
-            cursor: pointer;
-            font-size: var(--md);
-            font-weight: bold;
-            height: 50px;
-        }
-
-        .login-buttom {
+        .Create-buttom {
             margin-top: 14px;
             margin-bottom: 30px;
         }
 
-        .resend {
-            color: var(--very-light-pink);
-            font-size: var(--md);
-            font-weight: 300;
-            margin-top: 0px;
-            margin-bottom: 50px;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        .resend a {
-            color: var(--Hospital-green);
-            text-decoration: none; /*quita la linea que aparece abajo del enlace */
-        }
-
         @media (max-width:640px) {
-            .logo {
-                display: block;
-                /* para que aparesca */
-            }
-
-            .resend {
-                margin-bottom: 140px;
+            .input-password {
+              margin-bottom: 140px;
             }
         }
     </style>
@@ -130,19 +96,16 @@
 <body>
     <div class="login">
         <div class="form-container">
-            <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
+            <h1 class="title">My account</h1>
             <form class="form" action="/">
-                <label for="Email" class="lable">Email address</label>
+                <label for="Name" class="lable">Name</label>
+                <input type="text" id="Name" placeholder="carlos Yokoo" class="input input-name">
+                <label for="Email" class="lable">Email</label>
                 <input type="Email" id="Email" placeholder="carlos@hotmail.com" class="input input-email">
-
                 <label for="password" class="lable">password</label>
                 <input type="password" id="password" placeholder="*********" class="input input-password">
-                <input type="button" value="login in" class="primary-buttom login-buttom">
-                <p class="resend">
-                    <a href="/">Forgot my password</a>
-                </p>
+                <input type="button" value="save" class="primary-buttom Create-buttom">
             </form>
-            <input type="button" value="sign up" class="second-buttom login-buttom">
         </div>
     </div>
 </body>
