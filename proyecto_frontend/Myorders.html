@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./logos/favicon_bota_fora.png.svg" type="img">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>My Orders</title>
+    <style>
+        :root {
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --Hospital-green: #ACD9B2;
+            --White: #FFFFFF;
+            --Black: #000000;
+            --Dark: #232830;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title {
+            width: 500px;
+            text-align: start;
+            padding-bottom: 20px;
+        }
+
+        .products {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 500px;
+            border-radius: 10px;
+            margin: 0px;
+        }
+
+        .products div {
+            margin: 15px 15px 15px 0px;
+            color: var(--Black);
+        }
+
+        .products div:first-child span {
+            display: flex;
+            flex-direction: column;
+            margin: 0px;
+        }
+
+        .products div:first-child span:first-child {
+            padding-top: 10px;
+        }
+
+        .products div:first-child span:first-child {
+            font-weight: bold;
+        }
+
+        .products div:first-child span:last-child {
+            padding-top: 4px;
+            font-size: var(--sm);
+            color: var(--very-light-pink);
+        }
+
+        .products div:last-child {
+            margin: 30px 10px 0px 10px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .products div:last-child figure {
+            margin: 0px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="title">
+            <h3>My Orders</h3>
+        </div>
+        <div class="products">
+            <div>
+                <span>04.25.2021</span>
+                <span>6 articles</span>
+            </div>
+            <div>
+                <span>$120,00</span>
+                <figure>
+                    <img src="./icons/flechita.svg">
+                </figure>
+            </div>
+        </div>
+        <div class="products">
+            <div>
+                <span>02.11.2021</span>
+                <span>6 articles</span>
+            </div>
+            <div>
+                <span>$120,00</span>
+                <figure>
+                    <img src="./icons/flechita.svg">
+                </figure>
+            </div>
+        </div>
+        <div class="products">
+            <div>
+                <span>02.10.2021</span>
+                <span>6 articles</span>
+            </div>
+            <div>
+                <span>$120,00</span>
+                <figure>
+                    <img src="./icons/flechita.svg">
+                </figure>
+            </div>
+        </div>
+        <div class="products">
+            <div>
+                <span>04.25.2021</span>
+                <span>6 articles</span>
+            </div>
+            <div>
+                <span>$120,00</span>
+                <figure>
+                    <img src="./icons/flechita.svg">
+                </figure>
+            </div>
+        </div>
+        <div class="products">
+            <div>
+                <span>04.25.2021</span>
+                <span>6 articles</span>
+            </div>
+            <div>
+                <span>$120,00</span>
+                <figure>
+                    <img src="./icons/flechita.svg">
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

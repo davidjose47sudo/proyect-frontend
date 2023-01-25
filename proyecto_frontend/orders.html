@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./logos/favicon_bota_fora.png.svg" type="img">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>My Order</title>
+    <style>
+        :root {
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --Hospital-green: #ACD9B2;
+            --White: #FFFFFF;
+            --Black: #000000;
+            --Dark: #232830;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-container div {
+            margin: 10px;
+        }
+
+        .title {
+            width: 500px;
+            text-align: start;
+            padding-bottom: 20px;
+        }
+
+        .products {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: var(--text-input-field);
+            width: 500px;
+            border-radius: 10px;
+        }
+
+        .products div {
+            margin: 15px;
+            color: var(--Black);
+        }
+
+        .products div:first-child span {
+            display: flex;
+            flex-direction: column;
+            margin: 0px;
+        }
+
+        .products div:first-child span:first-child {
+            padding-top: 10px;
+        }
+
+        .products div:first-child span:first-child {
+
+            font-weight: bold;
+        }
+
+        .products div:first-child span:last-child {
+
+            color: var(--very-light-pink);
+        }
+
+        .products div:last-child {
+            margin: 30px;
+            font-weight: bold;
+        }
+
+        .product {
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 10px;
+        }
+
+        .product div:first-child {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 0px;
+        }
+
+        .product div:first-child figure {
+            margin: 0px;
+        }
+
+        .product div:first-child figure>img {
+            object-fit: cover;
+            width: 80px;
+            height: 80px;
+            border-radius: 15px;
+            margin-right: 10px;
+        }
+
+        .product div:first-child p {
+            margin: 0px;
+            color: var(--very-light-pink);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="title">
+            <h3>My order</h3>
+        </div>
+        <div class="products">
+            <div>
+                <span>04.25.2021</span>
+                <span>6 articles</span>
+            </div>
+            <div>
+                <span>$560.00</span>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <figure>
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Bike">
+                </figure>
+                <p>Bike</p>
+            </div>
+            <div>
+                <p>$120.00</p>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <figure>
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Bike">
+                </figure>
+                <p>Bike</p>
+            </div>
+            <div>
+                <p>$120.00</p>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <figure>
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Bike">
+                </figure>
+                <p>Bike</p>
+            </div>
+            <div>
+                <p>$120.00</p>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <figure>
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Bike">
+                </figure>
+                <p>Bike</p>
+            </div>
+            <div>
+                <p>$120.00</p>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <figure>
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Bike">
+                </figure>
+                <p>Bike</p>
+            </div>
+            <div>
+                <p>$120.00</p>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <figure>
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Bike">
+                </figure>
+                <p>Bike</p>
+            </div>
+            <div>
+                <p>$120.00</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
