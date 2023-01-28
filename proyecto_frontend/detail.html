@@ -1,12 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./logos/favicon_bota_fora.png.svg" type="img">
+    <link href="https://fonts.googleapis.com/css2?famliy=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Detail</title>
+    <style>
+        :root {
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --Hospital-green: #ACD9B2;
+            --White: #FFFFFF;
+            --Black: #000000;
+            --Dark: #232830;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .primary-buttom {
+            background-color: var(--Hospital-green);
+            border-radius: 8px;
+            border: none;
+            color: var(--White);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 50px;
+        }
+
+        .add-to-cart-buttom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-detail {
+            width: 360px;
+            padding-bottom: 24px;
+            position: absolute; /* para que se sobreponga sobre otro contenido */
+            right: 0px;  /* para ubicarlo a la derecha */
+        }
+
+        .product-detail>img {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 0px 0px 20px 20px;
+        }
+
+        .product-detail-close {
+            background-color: var(--text-input-field);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            position: absolute;/* para que se sobre ponga sobre su contenedor haciendolo independiente */
+            top: 12px;  /* para crear una separacion entre la parte superior de la pantalla */
+            left: 12px; /* para crear una separacion entre la parte izquierda de la pantalla */
+        }
+
+        .product-detail-close>img {
+            position: absolute;
+        }
+
+        .product-detail-close>img:hover {
+            cursor: pointer;
+        }
+
+        .product-info {
+            margin: 24px 24px 0px 24px;
+        }
+
+        .product-info p:nth-child(1) {
+            margin-bottom: 4px;
+            margin-top: 0px;
+            font-weight: bold;
+            font-size: var(--md);
+        }
+
+        .product-info p:nth-child(2) {
+            margin-top: 0px;
+            margin-bottom: 36px;
+            color: var(--very-light-pink);
+            font-size: var(--md);
+        }
+
+        .product-info p:nth-child(3) {
+            margin-bottom: 4px;
+            margin-top: 0px;
+            margin-bottom: 36px;
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+        }
+
+        @media (max-width:640px) {
+            .product-detail {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    
+    <aside class="product-detail">
+        <div class="product-detail-close">
+            <img src="./icons//icon_close.png">
+        </div>
+        <img
+            src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+        <div class="product-info">
+            <p>$35,00</p>
+            <p>Bike</p>
+            <p> with its functional oan practical inferior,this
+                refrigeratos also fulfills a decorative function,
+                adding personality and a retro-vintage
+                aesthetic to your kitchen or workplace.</p>
+            <button class="primary-buttom add-to-cart-buttom">
+                <img src="./icons/bt_add_to_cart.svg">
+                add to cart
+            </button>
+        </div>
+
+    </aside>
+
 </body>
+
 </html>
